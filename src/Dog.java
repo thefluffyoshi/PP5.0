@@ -89,9 +89,9 @@ public class Dog
     {
         String output = "";
         output += "Name: " + name;
-        output += "Age: " + age;
-        output += "Breed: " + breed;
-        output += "Pounds: " + pounds;
+        output += "\nAge: " + age;
+        output += "\nBreed: " + breed;
+        output += "\nPounds: " + pounds;
         return output;
     }//end toString
 }//end class Dog
