@@ -1,4 +1,4 @@
-public class Dog
+public class Dog implements Comparable<Dog>
 {
     //Instance variables
     String name;
@@ -83,6 +83,21 @@ public class Dog
         return kilo + " kilo";
     }//end conversion pounds to kilo
 
+    public int compareTo(Dog dog4)
+    {
+        if (this.age < dog4.age)
+        {
+            return -1;
+        }
+        else if (this.age == dog4.age)
+        {
+            return 0;
+        }
+        else
+        {
+            return -1;
+        }
+    }//end compareTo from interface Comparable
 
     //toString
     public String toString()
